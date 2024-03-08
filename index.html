@@ -1,0 +1,66 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/home.html">calculator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/home.html">Home</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="calculator-buttons">
+    <!-- Additional operation buttons -->
+    <button class="btn" onclick="selectOperation('%')">%</button>
+    <button type="button" class="btn" onclick="clearEntry()">CE</button>
+    <button type="button" class="btn" onclick="clearDisplay()">C</button>
+
+    <button class="btn" onclick="selectOperation('sqrt')">√x</button>
+
+    <button class="btn" onclick="appendNumber('7')">7</button>
+    <button class="btn" onclick="appendNumber('8')">8</button>
+    <button class="btn" onclick="appendNumber('9')">9</button>
+    <button class="btn" onclick="selectOperation('divide')">÷</button>
+
+    <button class="btn" onclick="appendNumber('4')">4</button>
+    <button class="btn" onclick="appendNumber('5')">5</button>
+    <button class="btn" onclick="appendNumber('6')">6</button>
+    <button class="btn" onclick="selectOperation('multiply')">×</button>
+
+    <button class="btn" onclick="appendNumber('1')">1</button>
+    <button class="btn" onclick="appendNumber('2')">2</button>
+    <button class="btn" onclick="appendNumber('3')">3</button>
+    <button class="btn" onclick="selectOperation('subtract')">−</button>
+
+    <button class="btn" onclick="selectOperation('plusMinus')">±</button>
+    <button class="btn" onclick="appendNumber('0')">0</button>
+    <button class="btn" onclick="appendNumber('.')">.</button>
+    <button class="btn" onclick="selectOperation('add')">+</button>
+
+    <!-- Equals button -->
+    <button class="btn equals" onclick="calculate()">=</button>
+</div>
+
+<div class="calculator">
+    <div class="calculator-display">0</div>
+    <div class="calculator-buttons">
+        <!-- Your buttons go here -->
+    </div>
+</div>
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+
+
